@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div class="d1">
+  <div class="container">
+    <form class="form" action="#" method="post">
+      <h1>Registration Form</h1>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="roll">Roll No:</label>
+        <input type="tel" id="roll" name="roll" required>
+      </div>
+      <div class="form-group">
+        <label for="university">University:</label>
+        <select id="university" name="university" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="GEU">GEU</option>
+          <option value="GEHU">GEHU</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="events">Events</option>
+          <option value="seminar">Seminar</option>
+          <option value="workshop">Workshop</option>
+        </select>
+      </div>
+      <div class="form-group" id="events-options">
+        <label for="events-options">Event Options:</label>
+        <select id="events-options" name="events-options">
+          <option value="" disabled selected>Select an option</option>
+          <option value="fest">Fest</option>
+          <option value="dancing">Dancing</option>
+          <option value="singing">Singing</option>
+        </select>
+      </div>
+      <div class="form-group" id="seminar-options">
+        <label for="seminar-options">Seminar Options:</label>
+        <select id="seminar-options" name="seminar-options">
+          <option value="" disabled selected>Select an option</option>
+          <option value="cyber-security">Cyber Security</option>
+          <option value="web-development">Web Development</option>
+        </select>
+      </div>
+      <div class="form-group" id="workshop-options">
+        <label for="workshop-options">Workshop Options:</label>
+        <select id="workshop-options" name="workshop-options">
+<option value="" disabled selected>Select an option</option>
+          <option value="python">Python</option>
+          <option value="graphic-designer">Graphic Designer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

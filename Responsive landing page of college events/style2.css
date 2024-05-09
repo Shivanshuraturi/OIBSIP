@@ -1,0 +1,86 @@
+body {
+    background-image: url('https://images.shiksha.com/mediadata/images/1576563781phpQj94TQ.jpeg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .d1{
+      margin-top: 5%;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Conditional Option Display */
+  #events-options,
+  #seminar-options,
+  #workshop-options {
+    display: none;
+  }
+  
+  #event[value="events"] ~ #events-options,
+  #event[value="seminar"] ~ #seminar-options,
+  #event[value="workshop"] ~ #workshop-options {
+    display: block;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .form {
+      max-width: 100%;
+    }
+  }

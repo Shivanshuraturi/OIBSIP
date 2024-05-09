@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEU EVENTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Graphic Era-1 (1) (5).png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#f1">ABOUT</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#c1">EVENTS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#f1">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+<!-- sliderbar -->
+
+<header>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="img1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://1.bp.blogspot.com/-7JQ_1syMIRA/XQfrPFf3yDI/AAAAAAAAC8M/ckE9Acn9PfUrBzZvL-Tz7HbeZfJuY9EUgCLcBGAs/s1600/IEEE%2Bseminar%2Btopics%2Bcloud%2Bcomputing.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://i.ytimg.com/vi/hQJWr-M4bFY/maxresdefault.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>
+  
+<!-- Category filters -->
+<div class="category-filter">
+  <button class="filter-button active" onclick="filterSelection('all')">All</button>
+  <button class="filter-button" onclick="filterSelection('workshop')">Workshops</button>
+  <button class="filter-button" onclick="filterSelection('seminar')">Seminars</button>
+  <button class="filter-button" onclick="filterSelection('Events')">Events</button>
+</div>
+<div class="container" id="c1">
+<!-- Event cards -->
+<div class="event-card workshop">
+  <img src="https://glints-dashboard.s3.amazonaws.com/event-banner-pic/56d74d614d39013557b192637497a826.png" alt="Workshop Image">
+ 
+  <p>Venue: ABC Hall</p>
+  <p>Date: July 8, 2023</p>
+  <div class="timer">STARTS IN : <span id="timer1"></span></div>
+  
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+
+</div>
+<div class="event-card workshop">
+  <img src="https://i.ytimg.com/vi/hQJWr-M4bFY/maxresdefault.jpg" alt="Workshop Image">
+ 
+  <p>Venue: ABC Hall</p>
+  <p>Date: June 5, 2023</p>
+  <div class="timer">STARTS IN : <span id="timer1"></span></div>
+  
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+
+</div>
+
+<div class="event-card seminar">
+  <img src="https://i.pinimg.com/originals/7e/b0/27/7eb027df015888136b5003bfa092440b.jpg" alt="Seminar Image">
+  <p>Venue: XYZ Auditorium</p>
+  <p>Date: July 10, 2023</p>
+  <div class="timer">STARTS IN :<span id="timer2"></span></div>
+ 
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+</div>
+<div class="event-card seminar">
+  <img src="https://1.bp.blogspot.com/-7JQ_1syMIRA/XQfrPFf3yDI/AAAAAAAAC8M/ckE9Acn9PfUrBzZvL-Tz7HbeZfJuY9EUgCLcBGAs/s1600/IEEE%2Bseminar%2Btopics%2Bcloud%2Bcomputing.webp" alt="Seminar Image">
+  <p>Venue: XYZ Auditorium</p>
+  <p>Date: June 10, 2023</p>
+  <div class="timer">STARTS IN :<span id="timer2"></span></div>
+ 
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+</div>
+
+
+<div class="event-card Events">
+  <img src="img4.jpg" alt="Seminar Image">
+  <p>Venue: XYZ Auditorium</p>
+  <p>Date: June 10, 2023</p>
+  <div class="timer">STARTS IN :<span id="timer2"></span></div>
+ 
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+</div>
+<div class="event-card Events">
+  <img src="img1.jpg" alt="Seminar Image">
+  <p>Venue: XYZ Auditorium</p>
+  <p>Date: June 10, 2023</p>
+  <div class="timer">STARTS IN :<span id="timer2"></span></div>
+ 
+  <button class="button-24" role="button"><a href="index2.html">Register</a></button>
+  <button class="button-25" role="button">DETAILS</button>
+</div>
+
+</div>
+
+
+<div id="f1">
+<footer class="footer" name="f1">
+  <div class="footer-logo">
+    <img src="https://student.gehu.ac.in/Account/showClientLoginPageLogo" alt="Graphic Era logo">
+  </div>
+  <div class="footer-info">
+    <div class="footer-section">
+      <h4>Dehradun</h4>
+      <p>Graphic Era Hill University</p>
+      <p>Bell Road, Clement Town Dehradun</p>
+      <p>Uttarakhand</p>
+    </div>
+    <div class="footer-section">
+      <h4>Bhimtal</h4>
+      <p>Graphic Era Hill University</p>
+      <p>SatTal Road, Bhimtal, Nainital</p>
+      <p>Uttarakhand 263136</p>
+    </div>
+    <div class="footer-section">
+      <h4>Haldwani</h4>
+      <p>Graphic Era Hill University</p>
+      <p>Tularampur, Near Mahalaxmi Temple, opp. Middas Squar</p>
+      <p>Haldwani, Uttarakhand 263139</p>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="script.js"></script>
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
